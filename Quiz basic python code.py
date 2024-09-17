@@ -288,6 +288,6 @@ else:
 time.sleep(5)
 print("\nThank you for playing!!!!!")
 time.sleep(2)
-print("\nCoded by Naven Marl M. Cuenca")
+print("\nCoded by Mafubara")
 time.sleep(2)
 print("❤Goodbye!!❤")
