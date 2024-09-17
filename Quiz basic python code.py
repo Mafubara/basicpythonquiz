@@ -106,7 +106,7 @@ while q2 != 'A' and q2 != 'B' and q2 != 'C' and q2 != 'D' and q2 != 'a' and q2 !
 if q2 == 'D' or q2 == 'd':
     score = score + 1
 else:
-    score = score + 0
+    score = score
 
 q3 = input("\n🖥️3. What is the operating system that an iPhone uses??🖥️"
       "\nA. Android \nB. macOS \nC. iOS \nD. iPadOS"
@@ -122,7 +122,7 @@ while q3 != 'A' and q3 != 'B' and q3 != 'C' and q3 != 'D' and q3 != 'a' and q3 !
 if q3 == 'C' or q3 == 'c':
     score = score + 1
 else:
-    score = score + 0
+    score = score
 
 q4 = input("\n🖥️4. Which one is not a type of computer??🖥️"
       "\nA. Microcomputer \nB. Personal Computer \nC. Supercomputer \nD. Mainframe Computer"
@@ -138,7 +138,7 @@ while q4 != 'A' and q4 != 'B' and q4 != 'C' and q4 != 'D' and q4 != 'a' and q4 !
 if q4 == 'B' or q4 == 'b':
     score = score + 1
 else:
-    score = score + 0
+    score = score
 
 q5 = input("\n🖥️5. It is the core of the computer that is responsible for processing and storing data\n and controls all computer functions??🖥️"
       "\nA. CPU \nB. Motherboard \nC. Processor \nD. System Unit"
@@ -154,7 +154,7 @@ while q5 != 'A' and q5 != 'B' and q5 != 'C' and q5 != 'D' and q5 != 'a' and q5 !
 if q5 == 'D' or q5 == 'd':
     score = score + 1
 else:
-    score = score + 0
+    score = score
 
 print(r"""
 ____  ____  _  _  ____ 
@@ -186,7 +186,7 @@ while q6 != 'A' and q6 != 'B' and q6 != 'a' and q6 != 'b':
 if q6 == 'A' or q6 == 'a':
     score = score + 1
 else:
-    score = score + 0
+    score = score
 
 q7 = input("\n🖥️7. Monitor is an example of an input device.🖥️"
       "\nA. TRUE \nB. FALSE \nYour Answer: ")
@@ -200,7 +200,7 @@ while q7 != 'A' and q7 != 'B' and q7 != 'a' and q7 != 'b':
 if q7 == 'B' or q7 == 'b':
     score = score + 1
 else:
-    score = score + 0
+    score = score
 
 q8 = input("\n🖥️8. In Egyptian Numbering System, Tadpole is equal to 100,000.🖥️"
       "\nA. TRUE \nB. FALSE \nYour Answer: ")
@@ -214,7 +214,7 @@ while q8 != 'A' and q8 != 'B' and q8 != 'a' and q8 != 'b':
 if q8 == 'A' or q8 == 'a':
     score = score + 1
 else:
-    score = score + 0
+    score = score
 time.sleep(1)
 print("\nBack to multiple choices...")
 time.sleep(1)
@@ -233,7 +233,7 @@ while q9 != 'A' and q9 != 'B' and q9 != 'C' and q9 != 'D' and q9 != 'a' and q9 !
 if q9 == 'B' or q9 == 'b':
     score = score + 1
 else:
-    score = score + 0
+    score = score
 q10 = input("\n🖥️10.What is the Android Skin that is exclusive to Samsung Devices?.🖥️"
       "\nA. HyperOS \nB. OxygenOS \nC. EMUI \nD. OneUI"
       "\nYour Answer: ")
@@ -248,7 +248,7 @@ while q10 != 'A' and q10 != 'B' and q10 != 'C' and q10 != 'D' and q10 != 'a' and
 if q10 == 'D' or q10 == 'd':
     score = score + 1
 else:
-    score = score + 0
+    score = score
 time.sleep(3)
 print(r"""
   ___  __   __ _   ___  ____   __  ____  _  _  __     __  ____  __  __   __ _  ____  _  _   
