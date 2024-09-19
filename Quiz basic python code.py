@@ -1,12 +1,14 @@
+#To give off the illusion of loading a program:
 import time
+
 #Score
 score = 0
 
-#Error Displayed
-INVALIDG = "\n❌Invalid Choice! Please Try Again...❌"
-INVALID = "\n❌Invalid Letter! Please try again...❌"
-REALLY = "\n🤷‍♂️Are you for real??🤷‍♂️"
+#Error Displayed when prompting user to input:
+INVALID = "\n❌Invalid Choice! Please Try Again...❌"
+NOTHING = "\n🤷‍♂️Are you for real??🤷‍♂️"
 
+#Program starts
 print("Starting Program...")
 time.sleep(5)
 print(r"""
@@ -23,28 +25,33 @@ print("\n***********************************************************************
 print("***                       🖥️QUIZ TOPIC: COMPUTER🖥️                          ***")
 print("********************************************************************************")
 time.sleep(2)
+#Prompt user to input their name:
 Name = input("\nPlease type your name here: ")
 print ("************************************")
 print ("*** 👨🏻Male                       ***")
 print ("*** 👩🏻Female                     ***")
 print ("************************************")
+#Prompt user to input their gender:
 Gender = input("\nGender: ")
+#Type it properly otherwise it's considered "Invalid":
 while Gender != 'Female' and Gender != 'female' and Gender != 'Male' and Gender != 'male':
-    print(INVALIDG)
+    print(INVALID)
     print("\n************************************")
     print("*** 👨🏻Male                       ***")
     print("*** 👩🏻Female                     ***")
     print("************************************")
     Gender = input("\nGender: ")
+#Typing your gender will give you an emoji based on it:
 if Gender == 'Female' or Gender == 'female':
     Gender = "👩🏻"
 else:
     Gender = "👨🏻"
-
+#Stats is displayed after inputting your name and gender:
 print ("\n\n**************Your Stats**************")
 print (f"  {Gender}{Name}                         ")
 print (f"  Score: {score} / 10                    ")
 print ("**************************************")
+#Quiz will commence:
 print(r"""
   __   _  _  __  ____    ____  ____  __   ____  ____  ____    __  __ _    ____            
  /  \ / )( \(  )(__  )  / ___)(_  _)/ _\ (  _ \(_  _)/ ___)  (  )(  ( \  ( __ \           
@@ -73,20 +80,20 @@ print(r"""
 (____/ (__)\_/\_/(__\_) (__) 
 """)
 
-#Prompt user to input valid letter, otherwise the question repeats.
+#Prompt user to input valid letter, otherwise the question repeats:
 q1 = input("\n\n🖥️1. What is the latest version of Windows OS??🖥️"
       "\nA. Windows 10 \nB. Windows 11 \nC. Windows 7 \nD. Windows 8.1"
       "\nYour Answer: ")
 #However if you type nothing, I can't tell if you're joking..
 while q1 != 'A' and q1 != 'B' and q1 != 'C' and q1 != 'D' and q1 != 'a' and q1 != 'b' and q1 != 'c' and q1 != 'd':
     if q1 == '':
-        print(REALLY)
+        print(NOTHING)
     else:
         print(INVALID)
     q1 = input("\n1. What is the latest version of Windows OS??"
                "\nA. Windows 10 \nB. Windows 11 \nC. Windows 7 \nD. Windows 8.1"
                "\nYour Answer: ")
-#If the answer is correct, score is added by one point, if not then no points for you.
+#If the answer is correct, score is added by one point, if not then no points for you:
 if q1 == 'B' or q1 == 'b':
     score = 1
 else:
@@ -97,7 +104,7 @@ q2 = input("\n🖥️2. Which one is not an operating system??🖥️"
       "\nYour Answer: ")
 while q2 != 'A' and q2 != 'B' and q2 != 'C' and q2 != 'D' and q2 != 'a' and q2 != 'b' and q2 != 'c' and q2 != 'd':
     if q2 == '':
-        print(REALLY)
+        print(NOTHING)
     else:
         print(INVALID)
     q2 = input("\n🖥️2. Which one is not an operating system??🖥️"
@@ -113,7 +120,7 @@ q3 = input("\n🖥️3. What is the operating system that an iPhone uses??🖥�
       "\nYour Answer: ")
 while q3 != 'A' and q3 != 'B' and q3 != 'C' and q3 != 'D' and q3 != 'a' and q3 != 'b' and q3 != 'c' and q3 != 'd':
     if q3 == '':
-        print(REALLY)
+        print(NOTHING)
     else:
         print(INVALID)
     q3 = input("\n🖥️3. What is the operating system that an iPhone uses??🖥️"
@@ -129,7 +136,7 @@ q4 = input("\n🖥️4. Which one is not a type of computer??🖥️"
       "\nYour Answer: ")
 while q4 != 'A' and q4 != 'B' and q4 != 'C' and q4 != 'D' and q4 != 'a' and q4 != 'b' and q4 != 'c' and q4 != 'd':
     if q4 == '':
-        print(REALLY)
+        print(NOTHING)
     else:
         print(INVALID)
     q4 = input("\n🖥️4. Which one is not a type of computer??🖥️"
@@ -145,7 +152,7 @@ q5 = input("\n🖥️5. It is the core of the computer that is responsible for p
       "\nYour Answer: ")
 while q5 != 'A' and q5 != 'B' and q5 != 'C' and q5 != 'D' and q5 != 'a' and q5 != 'b' and q5 != 'c' and q5 != 'd':
     if q5 == '':
-        print(REALLY)
+        print(NOTHING)
     else:
         print(INVALID)
     q5 = input("\n🖥️5. It is the core of the computer that is responsible for processing and storing data\n and controls all computer functions??🖥️"
@@ -178,7 +185,7 @@ q6 = input("\n🖥️6. BIOS means Basic Input Output System.🖥️"
       "\nA. TRUE \nB. FALSE \nYour Answer: ")
 while q6 != 'A' and q6 != 'B' and q6 != 'a' and q6 != 'b':
     if q6 == '':
-        print(REALLY)
+        print(NOTHING)
     else:
         print(INVALID)
     q6 = input("\n🖥️6. BIOS means Basic Input Output System.🖥️"
@@ -192,7 +199,7 @@ q7 = input("\n🖥️7. Monitor is an example of an input device.🖥️"
       "\nA. TRUE \nB. FALSE \nYour Answer: ")
 while q7 != 'A' and q7 != 'B' and q7 != 'a' and q7 != 'b':
     if q7 == '':
-        print(REALLY)
+        print(NOTHING)
     else:
         print(INVALID)
     q7 = input("\n🖥️7. Monitor is an example of an input device.🖥️"
@@ -206,7 +213,7 @@ q8 = input("\n🖥️8. In Egyptian Numbering System, Tadpole is equal to 100,00
       "\nA. TRUE \nB. FALSE \nYour Answer: ")
 while q8 != 'A' and q8 != 'B' and q8 != 'a' and q8 != 'b':
     if q8 == '':
-        print(REALLY)
+        print(NOTHING)
     else:
         print(INVALID)
     q8 = input("\n🖥️8. In Egyptian Numbering System, Tadpole is equal to 100,000.🖥️"
@@ -224,7 +231,7 @@ q9 = input("\n🖥️9.It is an output device that takes the electronic data sto
       "\nYour Answer: ")
 while q9 != 'A' and q9 != 'B' and q9 != 'C' and q9 != 'D' and q9 != 'a' and q9 != 'b' and q9 != 'c' and q9 != 'd':
     if q9 == '':
-        print(REALLY)
+        print(NOTHING)
     else:
         print(INVALID)
     q9 = input("\n🖥️9.It is an output device that takes the electronic data stored on a computer or other device and generates a hard copy.🖥️"
@@ -239,7 +246,7 @@ q10 = input("\n🖥️10.What is the Android Skin that is exclusive to Samsung D
       "\nYour Answer: ")
 while q10 != 'A' and q10 != 'B' and q10 != 'C' and q10 != 'D' and q10 != 'a' and q10 != 'b' and q10 != 'c' and q10 != 'd':
     if q10 == '':
-        print(REALLY)
+        print(NOTHING)
     else:
         print(INVALID)
     q10 = input("\n🖥️10.What is the Android Skin that is exclusive to Samsung Devices?.🖥️"
@@ -258,7 +265,7 @@ print(r"""
 print("\n🎉🥳Congratulations!! You have completed the quiz!!🥳🎉")
 
 
-#Score is Displayed after finishing all 10 questions.
+#Stats is displayed once again after finishing all 10 questions:
 time.sleep(2)
 print("\n⏳Calculating your score...⏳")
 time.sleep(4)
@@ -269,8 +276,10 @@ print (f"  {Gender}{Name}                         ")
 print (f"  Score: {score} out of 10               ")
 print ("**************************************")
 
+#This person judges your score elegantly...
 print("🌟Victoria Quizette is commenting....🌟")
 time.sleep(5)
+#The comments will vary according to your score: 10, 9-7, 6-4, 3-2, 1, 0
 if score == 10:
     print("\n🌟Victoria Quizette: Verily, thou hast achieved a most splendid score, one that is nigh unto perfection!"
           "\nSuch an accomplishment doth shine like the brightest star in the firmament, a testament to thy diligence and skill.🌟")
@@ -286,6 +295,7 @@ elif score >= 1:
 else:
     print("\n🌟Victoria Quizette: Womp womp.🌟")
 time.sleep(5)
+#End of program , I hope you enjoyed it!
 print("\nThank you for playing!!!!!")
 time.sleep(2)
 print("\nCoded by Mafubara")
